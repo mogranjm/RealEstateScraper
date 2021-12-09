@@ -1,0 +1,54 @@
+# Environment Setup
+- [x] Configure env file with base_url and HTTP header(s)
+- [x] Query URL HTTP success request with env & headers
+
+# HTTP Request functionality
+- [x] Scraper accesses base url
+- [x] Scraper query url
+
+# Scrape functionality (Extract, Transform)
+- [x] Scraper base page content expected
+- [ ] Scraper query page content expected - FAIL: page entirely rendered by JS
+- [ ] Scraper accesses query content
+- [ ] Scraper processes first page into DataFrame
+- [ ] Scraper writes first page to csv
+- [ ] Scraper gets new url
+- [ ] Scraper processes second page into DataFrame
+- [ ] Scraper appends second page to csv
+- [ ] Scraper doesn't get banned
+
+# Data Pipeline
+- [ ] Scraper runs weekly/on schedule (?env var)
+- [ ] Process raw data
+- [ ] Load csv into relational database
+    - [ ] No duplicates
+    - [ ] Record updates
+- [ ] Configure additional scrapers
+    - [ ] Property history
+    - [ ] Auction results & recent sales data
+- [ ] SQL Transactions to load into Data Warehouse
+
+# Data Warehouse
+- [ ] Set up RDBMS
+    - [ ] Tables
+        - [ ] Properties
+            - [ ] Address
+            - [ ] House type
+            - [ ] Bedrooms
+            - [ ] Bathrooms
+            - [ ] Car spaces
+            - [ ] Sales ID
+            - [ ] Floorplan
+            - [ ] Last sold date
+            - [ ] Last sold price
+    - [ ] Sales table
+        - [ ] Property ID
+        - [ ] Agent ID(s)
+    - [ ] Agents table
+        - [ ] Agency ID
+        - [ ] Name
+        - [ ] Phone
+- [ ] Get location data from openmaps
+
+# Analyse
+- [ ]
